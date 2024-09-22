@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="#">
-    <img src="assets/Frame 1.png">
+    <img src="assets/Frame 1.png" width="50" hifht="50">
   </a>
   <a href="#">
     <img src="assets/Frame 2.png">
