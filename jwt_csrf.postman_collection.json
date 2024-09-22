@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "1f337f10-4df2-4de1-a074-116847a67ff6",
+		"name": "jwt_csrf",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32228376"
+	},
+	"item": [
+		{
+			"name": "REGISTER_API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"narayanan@gmail.com\",\n  \"password\": \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN_API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"narayanan@gmail.com\",\n  \"password\": \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROTECTED_API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZWVmZTM3ZGJlNjc1Y2FkMzcyNDY3ZCIsImVtYWlsIjoibmFyYXlhbmFuQGdtYWlsLmNvbSIsImlhdCI6MTcyNjk5MDU3NiwiZXhwIjoxNzI2OTkxNDc2fQ.PNiCeFtO6Y2YvmI3JZUsOOODGga3frCeVPD3i_ZVrNZbKV_NGEyIsMb4rVwpYkgMVDVZHinZmGcdGP9Xr90iezH2JzwESVQg6JT1rEQqXPGVHZZv9yCJvCAOems-iuP1Sm6Q2t7aeapE7dF8Kb8uYomn-xwuFgIH7_s3BDwDj_nE7C9GHDGJp1Rlj2jErjuNeIEU5z-ykW0JtgrsSBDI9XA-ze7rq3PF0pNqoW56LYbOJ1qPStu-Vh40P7k1EGo7m6FuFgdSFWwE28aqv5_y162KWCqQgDWJq_72eSZb_XZIUOTeLjnvXJJ6m--Jr-Fn_ltO6TaYlFAZfhv0ncUW_Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CSRF-Token",
+						"value": "7c7f66ad6cb1c21f0ee249ecce60adf7c72347224b472bef7dfa9646f4cb4ab1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/protected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"protected"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REFRESH_API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "csrf-token",
+						"value": "7c7f66ad6cb1c21f0ee249ecce60adf7c72347224b472bef7dfa9646f4cb4ab1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
