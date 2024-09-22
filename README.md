@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="#"><img src="assets/jwt_csrf.png" alt="Assets"></a>
+  <a href="#"><img src="assets/authv2.png" alt="Assets"></a>
   <br>
   JWT & CSRF - Authentication 
   <br>
