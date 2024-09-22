@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="#">
-    <img src="https://github.com/Narayanan-info/Redir_X/blob/5b15405191648c6887a2876b603231f2ae41be1a/Assets/release_version.svg">
+    <img src="assets/Frame 1.png">
   </a>
   <a href="#">
     <img src="https://img.shields.io/travis/com/s0md3v/XSStrike.svg">
