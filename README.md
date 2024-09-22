@@ -13,10 +13,10 @@
     <img src="assets/Frame 1.png" width="150" hifht="150">
   </a>
   <a href="#">
-    <img src="assets/Frame 2.png">
+    <img src="assets/Frame 2.png" width="150" hifht="150">
   </a>
   <a href="#">
-      <img src="assets/Frame 3.png">
+      <img src="assets/Frame 3.png" width="150" hifht="150">
   </a>
 </p>
 
