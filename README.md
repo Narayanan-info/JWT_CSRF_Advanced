@@ -98,10 +98,12 @@ npm install
 **Set up environment variables: Create a .env file in the root directory and add the following variables:**
 
 ```bash
-MONGODB_URI=<your_mongo_db_connection_string>
-JWT_SECRET=<your_jwt_secret>
-JWT_REFRESH_SECRET=<your_jwt_refresh_secret>
-RATE_LIMIT_MAX=<max_login_attempts>
+PORT=3000
+JWT_EXPIRATION=3600
+JWT_REFRESH_EXPIRATION=86400
+JWT_PRIVATE_KEY=./config/key/private.key
+JWT_PUBLIC_KEY=./config/key/public.key
+MONGO_URI=<your_mongo_db_connection_string>
 ```
 **Start the server:**
 
